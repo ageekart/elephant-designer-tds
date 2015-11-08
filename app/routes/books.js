@@ -5,7 +5,7 @@ export default Ember.Route.extend({
 
 	model: function(){
 		return Ember.RSVP.hash({
-			books: this.store.find('book')
+			books: this.store.findAll('book')
 		});
 	},
 
